@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect, useRef } from "react";
 import logo from "../../assets/logo/logo.svg";
 import hamburgerMenu from "../../assets/icons/hamburger-menu.svg";
 import closeButton from "../../assets/icons/close-button.svg";
@@ -6,6 +6,22 @@ import closeButton from "../../assets/icons/close-button.svg";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
+
+  const navRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutsideNav = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutsideNav, true);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutsideNav);
+    };
+  }, []);
 
   const handleMenuOpen = () => {
     setIsMenuOpen(true);
@@ -41,24 +57,19 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center -mt-0.5 px-3">
       <img src={logo} className="w-24 cursor-pointer" alt="logo" />
-      <button>
-        <img
-          src={hamburgerMenu}
-          alt="hamburger menu"
-          onClick={handleMenuOpen}
-        />
+      <button onClick={handleMenuOpen}>
+        <img src={hamburgerMenu} alt="hamburger menu" />
       </button>
       {isMenuOpen && (
         <>
-          <nav className="bg-white fixed top-0 right-0 bottom-0 w-64 shadow">
-            <button>
-              <img
-                src={closeButton}
-                onClick={handleMenuClose}
-                className="pl-48 pt-3"
-              />
+          <nav
+            ref={navRef}
+            className=" bg-white fixed top-0 right-0 bottom-0 w-64 shadow"
+          >
+            <button onClick={handleMenuClose}>
+              <img src={closeButton} className="absolute left-48" />
             </button>
-            <ul className="flex flex-col gap-6 text-center text-xl">
+            <ul className="flex flex-col gap-6 text-center text-xl pt-20">
               {renderedLinks}
             </ul>
           </nav>
