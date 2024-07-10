@@ -71,7 +71,7 @@ export default function Header() {
             <button onClick={handleMenuClose}>
               <img src={closeButton} className="absolute left-3/4" />
             </button>
-            <ul className="flex flex-col gap-6 text-center text-xl pt-20">
+            <ul className="flex flex-col gap-6 text-center text-[1.35rem] pt-20">
               {renderedLinks}
             </ul>
           </nav>
