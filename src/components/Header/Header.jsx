@@ -56,7 +56,9 @@ export default function Header() {
 
   return (
     <header className="flex justify-between items-center -mt-0.5 px-3">
-      <img src={logo} className="w-24 cursor-pointer" alt="logo" />
+      <a href="/">
+        <img src={logo} className="w-24 cursor-pointer" alt="logo"></img>
+      </a>
       <button onClick={handleMenuOpen}>
         <img src={hamburgerMenu} alt="hamburger menu" />
       </button>
@@ -64,10 +66,10 @@ export default function Header() {
         <>
           <nav
             ref={navRef}
-            className=" bg-white fixed top-0 right-0 bottom-0 w-64 shadow"
+            className=" bg-white fixed top-0 right-0 bottom-0 w-3/4 shadow"
           >
             <button onClick={handleMenuClose}>
-              <img src={closeButton} className="absolute left-48" />
+              <img src={closeButton} className="absolute left-3/4" />
             </button>
             <ul className="flex flex-col gap-6 text-center text-xl pt-20">
               {renderedLinks}
