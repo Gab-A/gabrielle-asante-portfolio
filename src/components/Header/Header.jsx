@@ -66,7 +66,7 @@ export default function Header() {
         <>
           <nav
             ref={navRef}
-            className=" bg-white fixed top-0 right-0 bottom-0 w-3/4 shadow"
+            className=" bg-white fixed top-0 right-0 bottom-0 w-3/4 shadow z-20"
           >
             <button onClick={handleMenuClose}>
               <img src={closeButton} className="absolute left-3/4" />
