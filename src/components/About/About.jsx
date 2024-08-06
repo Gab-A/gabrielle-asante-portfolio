@@ -20,10 +20,10 @@ export default function About() {
           me for real-world challenges in the tech industry.
         </p>{" "}
         <p>
-          With a passion for enhancing user interaction through front-end
-          engineering, I’m keen to connect with peers who have shared interests
-          and explore new opportunities where I can both add value and further
-          my career.
+          With an enthusiasm for enhancing user interaction through front-end
+          development, I&#39;m keen to connect with peers who have shared
+          interests and excited to explore new opportunities where I can both
+          add value and further my career.
         </p>
       </div>
     </div>
