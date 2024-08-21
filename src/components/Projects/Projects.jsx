@@ -16,11 +16,11 @@ export default function Projects() {
   ];
 
   return (
-    <section className="ml-4 mt-5">
-      <h2 className="text-4xl font-medium mb-5">
+    <section className="mt-5 mb-5">
+      <h2 className=" ml-4  text-4xl font-medium mb-8">
         Projects<span className="text-violet-300 text-5xl">.</span>
       </h2>
-      <div className="max-w-[90%] shadow-sm hover:-translate-y-0.5 cursor-pointer">
+      <div className="max-w-[88%] shadow-sm hover:-translate-y-0.5 cursor-pointer m-auto">
         <video controls className="w-full rounded-t-xl object-cover">
           <source src={vibescribe} type="video/mp4" />
         </video>
