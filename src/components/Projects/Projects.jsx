@@ -17,7 +17,7 @@ export default function Projects() {
 
   return (
     <section className="mt-5 mb-5">
-      <h2 className=" ml-4  text-4xl font-medium mb-8">
+      <h2 className="ml-4 text-4xl font-medium mb-8">
         Projects<span className="text-violet-300 text-5xl">.</span>
       </h2>
       <div className="max-w-[88%] shadow-sm hover:-translate-y-0.5 cursor-pointer m-auto">
