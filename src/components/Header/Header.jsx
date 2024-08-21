@@ -35,7 +35,7 @@ export default function Header() {
     setActiveSection(section);
   };
 
-  const NAV_LINKS = ["About", "Projects", "Contact"];
+  const NAV_LINKS = ["About", "Skills", "Projects", "Contact"];
 
   const renderedLinks = NAV_LINKS.map((link) => {
     const classes = activeSection === link ? "text-violet-400" : "";

@@ -47,7 +47,7 @@ export default function Skills() {
   ];
 
   return (
-    <section>
+    <section id="skills">
       <div className="ml-4">
         <h2 className="text-4xl font-medium mb-5">
           Skills<span className="text-violet-400 text-5xl">.</span>
