@@ -1,5 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
+import Input from "../Input/Input";
+import Lottie from "lottie-react";
+import loadingAnimation from "../../assets/animations/loadingAnimation.json";
 
 export default function ContactForm() {
   const [contactFormData, setContactFormData] = useState({
@@ -67,6 +70,9 @@ export default function ContactForm() {
       );
       if (response.status === 200) {
         setStatusMessage("Message sent successfully!");
+        setTimeout(() => {
+          setStatusMessage(false);
+        }, 1500);
         setContactFormData({ name: "", email: "", subject: "", message: "" });
       }
     } catch (error) {
@@ -78,7 +84,54 @@ export default function ContactForm() {
   };
   return (
     <>
-      <form onSubmit={handleSubmit}></form>
+      <form onSubmit={handleSubmit} className="mx-4 mt-6 w[95%]">
+        <Input
+          label="Name"
+          type="text"
+          name="name"
+          value={contactFormData.name}
+          error={errors.name}
+          onChange={handleChange}
+        />
+        <Input
+          label="Email"
+          type="email"
+          name="email"
+          value={contactFormData.email}
+          error={errors.email}
+          onChange={handleChange}
+        />
+        <Input
+          label="Subject"
+          type="text"
+          name="subject"
+          value={contactFormData.subject}
+          error={errors.subject}
+          onChange={handleChange}
+        />
+        <Input
+          label="Message"
+          textarea="textarea"
+          name="message"
+          value={contactFormData.message}
+          error={errors.message}
+          onChange={handleChange}
+        />
+        <div className="flex justify-center items-center">
+          {isSubmitting ? (
+            <Lottie animationData={loadingAnimation} className="w-1/4" />
+          ) : (
+            <button className="rounded-lg border bg-violet-300 py-2.5 px-10 text-gray-50 text-lg cursor-pointer mb-4 mt-3 hover:opacity-95 active:shadow-md active:translate-y-2">
+              Submit
+            </button>
+          )}
+        </div>
+      </form>
+      {
+        <div className="flex justify-center items-center">
+          <p className="text-green-500 mt-3.5 mb-8">{statusMessage}</p>
+        </div>
+      }
     </>
   );
 }

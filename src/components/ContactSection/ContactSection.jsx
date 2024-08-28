@@ -8,7 +8,7 @@ export default function ContactSection() {
         Contact Me<span className="text-violet-300 text-5xl">.</span>
       </h2>
       <div>
-        <img src={contactImage} alt="contact-image" className="w-4/6 ml-4" />
+        <img src={contactImage} alt="contact-image" className="w-3/5 mx-auto" />
       </div>
       <ContactForm />
     </section>
