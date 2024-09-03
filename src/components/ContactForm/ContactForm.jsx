@@ -3,6 +3,7 @@ import axios from "axios";
 import Input from "../Input/Input";
 import Lottie from "lottie-react";
 import loadingAnimation from "../../assets/animations/loadingAnimation.json";
+import Button from "../Button/Button";
 
 export default function ContactForm() {
   const [contactFormData, setContactFormData] = useState({
@@ -142,9 +143,9 @@ export default function ContactForm() {
           {isSubmitting ? (
             <Lottie animationData={loadingAnimation} className="w-1/4" />
           ) : (
-            <button className="rounded-lg border bg-violet-300 py-2.5 px-10 text-gray-50 text-lg cursor-pointer mb-4 mt-3 hover:opacity-95 active:shadow-md active:translate-y-2">
+            <Button className="bg-violet-300 py-2.5 px-10 text-gray-50 text-lg hover:opacity-95 hover:text-violet-500">
               Submit
-            </button>
+            </Button>
           )}
         </div>
       </form>
