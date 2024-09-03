@@ -6,7 +6,7 @@ import loadingAnimation from "../../assets/animations/loadingAnimation.json";
 
 export default function ContactForm() {
   const [contactFormData, setContactFormData] = useState({
-    name: "",
+    fullName: "",
     email: "",
     subject: "",
     message: "",
@@ -29,8 +29,8 @@ export default function ContactForm() {
   const newErrors = {};
 
   const validateForm = () => {
-    if (!contactFormData.name) {
-      newErrors.name = "Name is required.";
+    if (!contactFormData.fullName) {
+      newErrors.fullName = "Full Name is required.";
     }
     if (!contactFormData.email) {
       newErrors.email = "Email is required.";
@@ -73,7 +73,12 @@ export default function ContactForm() {
         setTimeout(() => {
           setStatusMessage(false);
         }, 1500);
-        setContactFormData({ name: "", email: "", subject: "", message: "" });
+        setContactFormData({
+          fullName: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
       }
     } catch (error) {
       setStatusMessage("Failed to send message.");
@@ -86,33 +91,49 @@ export default function ContactForm() {
     <>
       <form onSubmit={handleSubmit} className="mx-4 mt-6 w[95%]">
         <Input
-          label="Name"
+          label="Full Name"
+          htmlFor="fullName"
+          id="fullName"
           type="text"
-          name="name"
-          value={contactFormData.name}
-          error={errors.name}
+          placeholder="Jane Smith"
+          name="fullName"
+          autoComplete="name"
+          value={contactFormData.fullName}
+          error={errors.fullName}
           onChange={handleChange}
         />
         <Input
           label="Email"
+          htmlFor="email"
+          id="email"
           type="email"
           name="email"
+          placeholder="jane.smith@example.com"
+          autoComplete="email"
           value={contactFormData.email}
           error={errors.email}
           onChange={handleChange}
         />
         <Input
           label="Subject"
+          htmlFor="subject"
+          id="subject"
           type="text"
           name="subject"
+          autoComplete="subject"
+          placeholder="Subject of your email"
           value={contactFormData.subject}
           error={errors.subject}
           onChange={handleChange}
         />
         <Input
           label="Message"
+          htmlFor="message"
+          id="message"
           textarea="textarea"
           name="message"
+          autoComplete="message"
+          placeholder="Type your message here"
           value={contactFormData.message}
           error={errors.message}
           onChange={handleChange}
