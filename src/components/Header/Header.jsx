@@ -33,10 +33,6 @@ export default function Header() {
 
   const handleActiveLink = (section) => {
     setActiveSection(section);
-
-    setTimeout(() => {
-      setActiveSection("");
-    }, 300);
   };
 
   const NAV_LINKS = ["About", "Skills", "Projects", "Contact"];
