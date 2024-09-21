@@ -48,17 +48,22 @@ export default function Skills() {
 
   return (
     <section id="skills">
-      <div className="ml-4">
-        <h2 className="text-4xl font-medium mb-5">
-          Skills<span className="text-violet-400 text-5xl">.</span>
-        </h2>
+      <div className="m-6 mb-0 md:px-2 md:mt-10 lg:mt-20 2xl:px-10">
+        <div className="flex items-center gap-8">
+          <h2 className="text-4xl font-medium mb-5 whitespace-nowrap md:text-[2.2rem] lg:text-5xl">
+            Skills<span className="text-violet-300 text-5xl">.</span>
+          </h2>
+          <div className="w-full border-t-[1.5px] border-neutral-800"></div>
+        </div>
+        <div>
+          <SkillCategory title="Frontend Technologies" skills={frontend} />
+          <SkillCategory title="Backend Technologies" skills={backend} />
+          <SkillCategory
+            title="Development Tools And Workflow"
+            skills={toolsAndWorkflow}
+          />
+        </div>
       </div>
-      <SkillCategory title="Frontend Technologies" skills={frontend} />
-      <SkillCategory title="Backend Technologies" skills={backend} />
-      <SkillCategory
-        title="Development Tools And Workflow"
-        skills={toolsAndWorkflow}
-      />
     </section>
   );
 }
