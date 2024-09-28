@@ -7,7 +7,6 @@ import Button from "../Button/Button";
 
 export default function ContactForm() {
   const [contactFormData, setContactFormData] = useState({
-    fullName: "",
     email: "",
     subject: "",
     message: "",
@@ -30,9 +29,6 @@ export default function ContactForm() {
   const newErrors = {};
 
   const validateForm = () => {
-    if (!contactFormData.fullName) {
-      newErrors.fullName = "Full Name is required.";
-    }
     if (!contactFormData.email) {
       newErrors.email = "Email is required.";
     } else if (!/\S+@\S+\.\S+/.test(contactFormData.email)) {
@@ -75,7 +71,6 @@ export default function ContactForm() {
           setStatusMessage(false);
         }, 1500);
         setContactFormData({
-          fullName: "",
           email: "",
           subject: "",
           message: "",
@@ -88,21 +83,13 @@ export default function ContactForm() {
       setIsSubmitting(false);
     }
   };
+
   return (
     <>
-      <form onSubmit={handleSubmit} className="mx-4 mt-6 w[95%]">
-        <Input
-          label="Full Name"
-          htmlFor="fullName"
-          id="fullName"
-          type="text"
-          placeholder="Jane Smith"
-          name="fullName"
-          autoComplete="name"
-          value={contactFormData.fullName}
-          error={errors.fullName}
-          onChange={handleChange}
-        />
+      <form
+        onSubmit={handleSubmit}
+        className="mr-4 mt-12 md:w-full md:mt-0 md:flex md:flex-col md:mx-0 md:justify-center"
+      >
         <Input
           label="Email"
           htmlFor="email"
