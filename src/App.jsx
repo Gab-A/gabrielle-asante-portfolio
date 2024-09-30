@@ -10,11 +10,15 @@ function App() {
   return (
     <div>
       <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <ContactSection />
+      <main>
+        <Hero />
+        <div className="px-6 space-y-6 md:space-y-10 md:px-10 lg:px-12 lg:space-y-20 mt-10 lg:mt-20 xl:px-32">
+          <About />
+          <Skills />
+          <Projects />
+          <ContactSection />
+        </div>
+      </main>
     </div>
   );
 }

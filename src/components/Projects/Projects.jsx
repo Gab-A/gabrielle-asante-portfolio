@@ -27,9 +27,9 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="m-6 md:px-2 md:mt-10 lg:mt-20 2xl:px-10">
-      <div className="flex items-center gap-8">
-        <h2 className="text-4xl font-medium mb-8 md:mt-5 whitespace-nowrap md:text-[2.2rem] lg:text-5xl">
+    <section id="projects">
+      <div className="flex items-center gap-8 md:mb-10">
+        <h2 className="text-4xl font-medium mb-5 whitespace-nowrap md:text-[2.2rem] lg:text-5xl">
           Projects<span className="text-violet-300 text-5xl">.</span>
         </h2>
         <div className="w-full border-t-[1.5px] border-neutral-800"></div>
@@ -40,7 +40,7 @@ export default function Projects() {
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
-        className="w-[98%] shadow-sm hover:translate-y-0.5 m-auto bg-violet-50 rounded-xl md:flex md:justify-center md:w-full lg:py-2.5 lg:px-3 xl:py-4 xl:px-4 xl:w-[75%]"
+        className="w-[98%] shadow-sm hover:translate-y-0.5 m-auto bg-violet-50 rounded-xl md:flex md:justify-center md:w-full lg:py-2.5 lg:px-3 xl:py-4 xl:px-4 xl:w-[98%]"
       >
         <div className=" bg-violet-50 rounded-xl justify-center items-center md:flex md:items-start md:w-full md:mx-5 md:gap-10 md:mt-8 lg:items-center">
           <div className="md:w-auto xl:w-auto">

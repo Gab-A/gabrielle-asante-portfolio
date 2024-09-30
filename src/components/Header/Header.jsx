@@ -57,11 +57,7 @@ export default function Header() {
     <header className="w-full">
       <div className="flex justify-between items-center -mt-0.5 px-3 md:px-5 lg:px-8">
         <a href="/">
-          <img
-            src={logo}
-            className="w-24 cursor-pointer lg:w-28"
-            alt="logo"
-          ></img>
+          <img src={logo} className="w-24 cursor-pointer" alt="logo"></img>
         </a>
         <button onClick={handleMenuOpen} className="md:hidden">
           <img src={hamburgerMenu} alt="hamburger menu" />
@@ -69,7 +65,7 @@ export default function Header() {
         <>
           <nav
             ref={navRef}
-            className={`bg-white fixed top-0 right-0 bottom-0 w-3/4 shadow z-20 transform transition-transform ${
+            className={` fixed top-0 right-0 bottom-0 w-3/4 shadow z-20 transform transition-transform ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             } md:translate-x-0 md:w-auto md:relative md:flex md:shadow-none md:items-end`}
           >
@@ -78,7 +74,7 @@ export default function Header() {
                 <img src={closeButton} className="absolute left-3/4" />
               </button>
             )}
-            <ul className="flex flex-col gap-6 text-center text-[1.35rem] pt-20 md:flex-row md:gap-5 md:text-[1.115rem] md:pt-0 md:mr-4 lg:text-[1.32rem]">
+            <ul className="flex flex-col gap-6 text-center text-[1.3rem] pt-20 md:flex-row md:gap-5  md:text-[1.1rem] md:pt-0 md:mr-4">
               {renderedLinks}
             </ul>
           </nav>

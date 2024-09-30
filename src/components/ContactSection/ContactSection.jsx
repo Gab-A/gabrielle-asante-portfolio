@@ -5,10 +5,7 @@ import linkedin from "../../assets/icons/linkedin-original.svg";
 
 export default function ContactSection() {
   return (
-    <section
-      id="contact"
-      className="m-6 md:px-2 md:mt-10 md:pb-7 lg:mt-20 2xl:px-10"
-    >
+    <section id="contact">
       <div className="flex items-center gap-8 md:mb-10">
         <h2 className="text-4xl font-medium whitespace-nowrap mb-5 md:text-[2.2rem] lg:text-5xl">
           Contact Me<span className="text-violet-300 text-5xl">.</span>
