@@ -49,18 +49,18 @@ export default function Skills() {
         </h2>
         <div className="w-full border-t-[1.5px] border-neutral-800"></div>
       </div>
-      <div className="h-[25hvh]">
+      <div className="bg-white flex mt-10">
         <Marquee
-          speed={65}
+          speed={70}
           gradient={false}
           pauseOnClick={true}
           pauseOnHover={true}
           loop={0}
-          className="m-0 p-0 overflow-hidden w-full"
+          className="overflow-hidden w-full bg-white 2xl:mt-20"
         >
           {skills.map((skill) => (
             <ul key={skill.name} className="flex">
-              <li className="flex justify-center items-center rounded-full m-5 p-5 w-22 h-22 list-none  bg-violet-50 shadow-[0_1px_25px_rgba(0,0,0,0.1)] border-[1px] border-solid border-white md:p-6 md:h-auto md:w-auto md:rounded-2xl">
+              <li className="flex justify-center items-center rounded-full m-2.5 p-4 w-[4.5rem] h-[4.5rem] list-none  bg-violet-50 shadow-[0_1px_25px_rgba(0,0,0,0.1)] border-[1px] border-solid border-white md:p-6 md:m-5 md:h-auto md:w-auto md:rounded-2xl">
                 <div className="flex items-center md:gap-8">
                   <img
                     src={skill.image}
