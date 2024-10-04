@@ -65,7 +65,7 @@ export default function Header() {
         <>
           <nav
             ref={navRef}
-            className={` fixed top-0 right-0 bottom-0 w-3/4 shadow z-20 transform transition-transform ${
+            className={`bg-[#FCFCFC] fixed top-0 right-0 bottom-0 w-3/4 shadow z-20 transform transition-transform ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             } md:translate-x-0 md:w-auto md:relative md:flex md:shadow-none md:items-end`}
           >

@@ -1,9 +1,10 @@
 import Lottie from "lottie-react";
 import womanWorkingAnimation from "../../assets/animations/heroAnimation.json";
+import Button from "../Button/Button";
 
 export default function Hero() {
   const cvLink =
-    "https://docs.google.com/document/d/10D9hdBkLzkorl7hwmGyPE1UYbFYVYGHN/edit?usp=sharing&ouid=117175190293271690444&rtpof=true&sd=true";
+    "https://docs.google.com/document/d/10D9hdBkLzkorl7hwmGyPE1UYbFYVYGHN/export?format=pdf";
 
   return (
     <section className="relative bg-[url('/src/assets/images/wave-background.svg')] bg-no-repeat m-4 rounded-lg bg-cover bg-center overflow-hidden h-[86vh] md:p-[3rem] md:rounded-none md:m-0 lg:h-screen xl:h-screen">
@@ -22,14 +23,12 @@ export default function Hero() {
             A Full Stack Developer.
           </p>
           <div className="flex flex-col justify-center items-center md:mt-6">
-            <a
+            <Button
               href={cvLink}
-              target="_blank"
-              rel="noopener noreferrer"
               className="rounded-lg border-violet-500 bg-violet-500 py-2.5 px-5 text-white text-lg cursor-pointer font-medium  hover:bg-violet-600 active:shadow-md active:translate-y-2 sm:text-xl sm:py-3 md:mt-0 2xl:text-2xl 2xl:py-4 "
             >
               Download CV
-            </a>
+            </Button>
           </div>
         </div>
       </div>

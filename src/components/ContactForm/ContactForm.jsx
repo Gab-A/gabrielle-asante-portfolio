@@ -130,7 +130,7 @@ export default function ContactForm() {
           {isSubmitting ? (
             <Lottie animationData={loadingAnimation} className="w-1/4" />
           ) : (
-            <Button className="bg-violet-300 py-2.5 px-10 text-gray-50 text-lg hover:opacity-95 hover:text-violet-500">
+            <Button className="bg-violet-300 py-2.5 px-10 text-lg hover:opacity-95 hover:text-violet-500 rounded-lg cursor-pointer mb-4 mt-3 active:shadow-md active:translate-y-2">
               Submit
             </Button>
           )}
