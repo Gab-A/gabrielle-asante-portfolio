@@ -12,7 +12,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <div className="px-6 space-y-6 md:space-y-10 md:px-14 lg:px-32 lg:space-y-20 mt-10 lg:mt-20 xl:px-40">
+        <div className="flex flex-col  px-6 space-y-6 md:space-y-10 md:px-14 lg:px-20 lg:space-y-20 mt-10 lg:mt-20 xl:px-40">
           <About />
           <Skills />
           <Projects />

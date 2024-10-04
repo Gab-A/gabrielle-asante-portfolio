@@ -10,8 +10,8 @@ export default function About() {
         </h2>
         <div className="w-full border-t-[1.5px] border-neutral-800"></div>
       </div>
-      <div className="lg:flex 2xl:w-full lg:gap-20 2xl:gap-32">
-        <div className="space-y-6 mt-3 text-[17.5px] sm:text-lg md:mt-0 lg:w-[85%] 2xl:max-w-[1440px] 2xl:w-3/4">
+      <div className="lg:flex lg:justify-center 2xl:w-full lg:gap-20 2xl:gap-32 min[2650px]:items-center">
+        <div className="space-y-6 mt-3 text-[17.5px] sm:text-lg md:mt-0 lg:w-auto 2xl:max-w-[1440px] 2xl:w-3/4 min-[2040px]:text-2xl min-[2560px]:text-[1.6rem] min-[2560px]:space-y-12">
           <p className=" leading-loose">
             In 2023, I uncovered my passion for software engineering while
             seeking out new career opportunities. This newfound interest allowed
@@ -32,7 +32,7 @@ export default function About() {
             add value and further my career.
           </p>
         </div>
-        <div className="flex justify-center items-center sm:mt-4 sm:m-auto sm:w-4/6 md:w-3/5 lg:w-1/2 2xl:w-2/5 lg:m-auto 2xl:-mt-24">
+        <div className="flex justify-center items-center sm:mt-4 sm:m-auto sm:w-4/6 md:w-3/5 lg:w-[150rem] xl:w-[135rem] 2xl:w-3/5 min-[1650px]:-mt-20 min-[1930px]:w-2/4 min-[2040px]:w-1/3 min-[2560px]:w-1/4">
           <img src={coding} />
         </div>
       </div>
