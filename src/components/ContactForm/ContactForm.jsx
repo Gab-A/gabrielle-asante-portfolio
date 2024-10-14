@@ -126,7 +126,7 @@ export default function ContactForm() {
           error={errors.message}
           onChange={handleChange}
         />
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center 2xl:justify-end">
           {isSubmitting ? (
             <Lottie animationData={loadingAnimation} className="w-1/4" />
           ) : (

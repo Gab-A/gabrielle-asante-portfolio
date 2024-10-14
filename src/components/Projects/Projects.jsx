@@ -77,7 +77,7 @@ export default function Projects() {
             </video>
           </div>
           <div>
-            <div className="p-6 transition-transfom rounded-b-xl space-y-6 md:space-y-3 md:p-0 2xl:space-y-8 2xl:pb-24 max-w-7xl min-[2280px]:pb-[18rem]">
+            <div className="p-6 transition-transfom rounded-b-xl space-y-6 md:p-0 2xl:space-y-6 2xl:pb-24 max-w-7xl min-[2280px]:pb-[18rem]">
               <h2 className="text-2xl flex items-center gap-1.5 2xl:text-3xl min-[2280px]:text-[2.2rem]">
                 {projects[activeProjectIndex].title}{" "}
                 <a
@@ -91,10 +91,10 @@ export default function Projects() {
                   </span>
                 </a>
               </h2>
-              <p className="leading-relaxed text-md font-light xl:mt-5 2xl:text-xl">
+              <p className="leading-relaxed text-md font-light xl:mt-5 2xl:text-lg min-[2280px]:text-xl">
                 {projects[activeProjectIndex].description}
               </p>
-              <ul className="flex flex-wrap gap-3 -ml-2 md:gap-2.5 lg:gap-3 min-[2280px]:gap-6 max-w-4xl">
+              <ul className="flex flex-wrap gap-3 -ml-2 min-[2280px]:gap-6 max-w-4xl">
                 {projects[activeProjectIndex]?.technologies.map(
                   (tech, index) => {
                     return (

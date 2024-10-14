@@ -1,5 +1,4 @@
 import Marquee from "react-fast-marquee";
-import SkillCategory from "../SkillCategory/SkillCategory";
 import html from "../../assets/icons/html5-original.svg";
 import css from "../../assets/icons/css3-original.svg";
 import sass from "../../assets/icons/sass-original.svg";
@@ -49,14 +48,14 @@ export default function Skills() {
         </h2>
         <div className="w-full border-t-[1.5px] border-neutral-800"></div>
       </div>
-      <div className="bg-white flex mt-10">
+      <div className="bg-[#fcfcfc] flex mt-10 w-full">
         <Marquee
           speed={70}
           gradient={false}
           pauseOnClick={true}
           pauseOnHover={true}
           loop={0}
-          className="overflow-hidden w-full bg-white 2xl:mt-20"
+          className=" bg-white md:bg-[#fcfcfc] 2xl:mt-20"
         >
           {skills.map((skill) => (
             <ul key={skill.name} className="flex">
@@ -75,12 +74,6 @@ export default function Skills() {
             </ul>
           ))}
         </Marquee>
-        {/* <SkillCategory title="Frontend Technologies" skills={frontend} />
-        <SkillCategory title="Backend Technologies" skills={backend} />
-        <SkillCategory
-          title="Development Tools And Workflow"
-          skills={toolsAndWorkflow}
-        /> */}
       </div>
     </section>
   );
