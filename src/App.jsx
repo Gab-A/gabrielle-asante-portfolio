@@ -5,7 +5,6 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import ContactSection from "./components/ContactSection/ContactSection";
-import { motion } from "framer-motion";
 
 function App() {
   return (

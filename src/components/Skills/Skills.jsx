@@ -48,14 +48,14 @@ export default function Skills() {
         </h2>
         <div className="w-full border-t-[1.5px] border-neutral-800"></div>
       </div>
-      <div className="bg-[#fcfcfc] flex mt-10 w-full">
+      <div className="bg-[#fafafa] flex mt-10 justify-center items-center w-full">
         <Marquee
           speed={70}
           gradient={false}
           pauseOnClick={true}
           pauseOnHover={true}
           loop={0}
-          className=" bg-white md:bg-[#fcfcfc] 2xl:mt-20"
+          className=" bg-[#fcfcfc] md:bg-[#fafafa] 2xl:mt-20"
         >
           {skills.map((skill) => (
             <ul key={skill.name} className="flex">
