@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <section className="relative bg-[url('/src/assets/images/wave-background.svg')] md:flex justify-center items-center bg-no-repeat m-4 rounded-lg bg-cover bg-center overflow-hidden h-[86vh] md:p-[3rem] md:rounded-none md:m-0 lg:h-screen xl:h-screen">
-      <div className="flex flex-col justify-center h-full -mt-16 items-center md:-mt-5 md:max-w-full md:flex-row lg:-mt-20 lg:justify-evenly min-[1115px]:gap-36">
+      <div className="flex flex-col justify-center h-full -mt-16 items-center md:-mt-5 md:max-w-full md:flex-row lg:-mt-20 lg:pl-4 lg:justify-evenly min-[1115px]:gap-36">
         <div className="md:order-2 md:w-[100%] lg:w-[55%] xl:w-1/2 2xl:w-full">
           <Lottie
             animationData={womanWorkingAnimation}
