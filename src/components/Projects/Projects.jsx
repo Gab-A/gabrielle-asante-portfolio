@@ -62,7 +62,7 @@ export default function Projects() {
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
-        className="w-[98%] shadow-sm hover:translate-y-0.5 m-auto bg-violet-50 rounded-xl md:flex md:justify-center md:w-full lg:py-2.5 lg:px-3 xl:pt-4 xl:pb-20 xl:px-4 xl:w-[98%] 2xl:pb-20 min-[2280px]:mt-20 min-[2280px]:px-14 "
+        className="w-[98%] shadow-md hover:translate-y-0.5 m-auto bg-violet-50 rounded-xl md:flex md:justify-center md:w-full lg:py-2.5 lg:px-3 xl:pt-4 xl:pb-20 xl:px-4 xl:w-[98%] 2xl:pb-20 min-[2280px]:mt-20 min-[2280px]:px-14 "
       >
         <div className=" bg-violet-50 rounded-xl justify-center items-center md:flex md:items-start md:w-full md:mx-5 md:gap-10 md:mt-14 md:mb-8 lg:items-start">
           <div className="mt-7 md:w-auto md:mt-0 xl:w-auto">
