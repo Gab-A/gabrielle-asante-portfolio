@@ -14,8 +14,8 @@ export default function About() {
         <div className="space-y-6 mt-3 text-[17.5px] sm:text-lg md:mt-0 lg:w-auto 2xl:max-w-[1440px] 2xl:w-3/4 min-[2040px]:text-2xl min-[2560px]:text-[1.6rem] min-[2560px]:space-y-12">
           <p className=" leading-loose">
             In 2023, I uncovered my passion for software engineering while
-            seeking out new career opportunities. This newfound interest allowed
-            me to immerse myself to delve into the world of coding.
+            seeking new career opportunities. This newfound interest allowed me
+            to delve into the world of coding.
           </p>
           <p className="leading-loose">
             After months later of self-teaching, I decided to join a bootcamp.
