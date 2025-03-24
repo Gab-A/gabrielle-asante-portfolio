@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 
 export default function Hero() {
   const cvLink =
-    "https://docs.google.com/document/d/10D9hdBkLzkorl7hwmGyPE1UYbFYVYGHN/export?format=pdf";
+    "https://docs.google.com/document/d/19HngJUIdvxVUX-a35uxrHlAeeHZi8Y4M/export?format=pdf";
 
   return (
     <section className="relative bg-[url('/src/assets/images/wave-background.svg')] md:flex justify-center items-center bg-no-repeat m-4 rounded-lg bg-cover bg-center overflow-hidden h-[86vh] md:p-[3rem] md:rounded-none md:m-0 lg:h-screen xl:h-screen">

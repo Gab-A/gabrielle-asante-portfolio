@@ -26,7 +26,7 @@ export default function About() {
             prepared me for real-world challenges in the tech industry.
           </p>{" "}
           <p className="leading-loose">
-            With an enthusiasm for enhancing user interaction through front-end
+            With a passion for creating seamless applications through full-stack
             development, I&#39;m keen to connect with peers who have shared
             interests and excited to explore new opportunities where I can both
             add value and further my career.
