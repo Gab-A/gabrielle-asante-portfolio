@@ -53,7 +53,7 @@ export default function Projects() {
         "Participated in a 24-hour hackathon hosted by British Airways, where I collaborated with a team of software engineers, data scientists, and UX/UI designers to develop a solution addressing the challenge: 'How might we encourage customers to book flights using their travel vouchers?'",
       technologies: ["HTML", "CSS", "Sass", "JavaScript", "React", "Figma"],
       image: britishAirwaysHackathon,
-      link: "https://github.com/LeightonGuang/aero-dynamic-british-airways-frontend-hackathon",
+      link: "https://github.com/Gab-A/aero-dynamic-british-airways-frontend-hackathon",
     },
     {
       title: "Todo",
